@@ -1,4 +1,3 @@
-# $Revision: 1.4 $
 Summary:	Fonts for figlet - awesome ASCII-art banners generator
 Summary(pl):	Czcionki dla figleta - programu do generowania napisów ASCII
 Name:		figlet-fonts
