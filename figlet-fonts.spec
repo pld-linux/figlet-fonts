@@ -1,4 +1,4 @@
-# $Revision: 1.1 $
+# $Revision: 1.2 $
 Summary:	Fonts for figlet - awesome ASCII-art banners generator
 Summary(pl):	Czcionki dla figleta - programu do generowania napisów ASCII
 Name:		figlet-fonts
@@ -25,15 +25,13 @@ This package contains extra fonts for figlet.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/games/figlet
 
-rm -f banner.flf
-cp -f *.{flf,flc} $RPM_BUILD_ROOT%{_datadir}/games/figlet
-cp -f bdffonts/*.flf $RPM_BUILD_ROOT%{_datadir}/games/figlet
-
+rm -f banner.flf 
+install *.{flf,flc} bdffonts/*.flf $RPM_BUILD_ROOT%{_datadir}/games/figlet
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_datadir}/games/figlet
 %doc bdffonts/{README,bdffont1.txt} eftichessChart {eftiwall-chart,eftiwall}.txt
+%{_datadir}/games/figlet
