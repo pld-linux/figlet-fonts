@@ -1,10 +1,10 @@
-# $Revision: 1.3 $
+# $Revision: 1.4 $
 Summary:	Fonts for figlet - awesome ASCII-art banners generator
 Summary(pl):	Czcionki dla figleta - programu do generowania napisów ASCII
 Name:		figlet-fonts
 # Version is last update date: yyyymmdd
 Version:	20020602
-Release:	1
+Release:	2
 License:	Free
 Group:		Applications/Games
 Source0:	ftp://ftp.plig.org/pub/figlet/fonts/contributed.tar.gz
@@ -14,10 +14,10 @@ Requires:	figlet
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Pakiet zawiera dodatkowe czcionki dla programu figlet.
+This package contains extra fonts for figlet.
 
 %description -l pl
-This package contains extra fonts for figlet.
+Pakiet zawiera dodatkowe czcionki dla programu figlet.
 
 %prep
 %setup -q -n contributed
