@@ -7,6 +7,7 @@ Release:	3
 License:	Free
 Group:		Applications/Games
 Source0:	ftp://ftp.plig.org/pub/figlet/fonts/contributed.tar.gz
+# Source0-md5:	6e2dec4499f7a7fe178522e02e0b6cd1
 URL:		http://st-www.cs.uiuc.edu/~chai/figlet.html
 Buildarch:	noarch
 Requires:	figlet
