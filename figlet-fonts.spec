@@ -26,7 +26,7 @@ Pakiet zawiera dodatkowe czcionki dla programu figlet.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/games/figlet
 
-rm -f banner.flf 
+rm -f banner.flf
 install *.{flf,flc} bdffonts/*.flf $RPM_BUILD_ROOT%{_datadir}/games/figlet
 
 %clean
