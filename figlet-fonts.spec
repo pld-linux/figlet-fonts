@@ -1,4 +1,4 @@
-# $Revision: 1.2 $
+# $Revision: 1.3 $
 Summary:	Fonts for figlet - awesome ASCII-art banners generator
 Summary(pl):	Czcionki dla figleta - programu do generowania napisów ASCII
 Name:		figlet-fonts
@@ -10,6 +10,7 @@ Group:		Applications/Games
 Source0:	ftp://ftp.plig.org/pub/figlet/fonts/contributed.tar.gz
 URL:		http://st-www.cs.uiuc.edu/~chai/figlet.html
 Buildarch:	noarch
+Requires:	figlet
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
