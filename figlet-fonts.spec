@@ -3,7 +3,7 @@ Summary(pl):	Czcionki dla figleta - programu do generowania napisów ASCII
 Name:		figlet-fonts
 # Version is last update date: yyyymmdd
 Version:	20020602
-Release:	3
+Release:	4
 License:	Free
 Group:		Applications/Games
 Source0:	ftp://ftp.plig.org/pub/figlet/fonts/contributed.tar.gz
