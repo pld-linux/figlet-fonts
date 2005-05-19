@@ -2,13 +2,13 @@ Summary:	Fonts for figlet - awesome ASCII-art banners generator
 Summary(pl):	Czcionki dla figleta - programu do generowania napisów ASCII
 Name:		figlet-fonts
 # Version is last update date: yyyymmdd
-Version:	20020602
-Release:	4
+Version:	20050306
+Release:	1
 License:	Free
 Group:		Applications/Games
-Source0:	ftp://ftp.plig.org/pub/figlet/fonts/contributed.tar.gz
-# Source0-md5:	6e2dec4499f7a7fe178522e02e0b6cd1
-URL:		http://st-www.cs.uiuc.edu/~chai/figlet.html
+Source0:	http://www.jave.de/figlet/figletfonts37.zip
+# Source0-md5:	9acfdcb96c9a20abea9c6f706a591b91
+URL:		http://www.jave.de/figlet/
 Requires:	figlet
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -20,19 +20,22 @@ This package contains extra fonts for figlet.
 Pakiet zawiera dodatkowe czcionki dla programu figlet.
 
 %prep
-%setup -q -n contributed
+%setup -q -n fonts
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/games/figlet
 
-rm -f banner.flf
-install *.{flf,flc} bdffonts/*.flf $RPM_BUILD_ROOT%{_datadir}/games/figlet
+rm -f {banner,big,block,bubble,digital,ivrit,lean,mini}.flf
+rm -f {mnemonic,script,shadow,slant,small,smscript,smshadow}.flf
+rm -f {smslant,standard,term}.flf
+rm -f upper.flc
+install *.{flf,flc} $RPM_BUILD_ROOT%{_datadir}/games/figlet
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc bdffonts/{README,bdffont1.txt} eftichessChart {eftiwall-chart,eftiwall}.txt
+%doc {categoriestree,categories,files,fonts_readme}.txt
 %{_datadir}/games/figlet/*
