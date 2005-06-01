@@ -9,6 +9,7 @@ Group:		Applications/Games
 Source0:	http://www.jave.de/figlet/figletfonts37.zip
 # Source0-md5:	9acfdcb96c9a20abea9c6f706a591b91
 URL:		http://www.jave.de/figlet/
+BuildRequires:	unzip
 Requires:	figlet
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
