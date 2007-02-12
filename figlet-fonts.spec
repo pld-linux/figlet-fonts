@@ -1,5 +1,5 @@
 Summary:	Fonts for figlet - awesome ASCII-art banners generator
-Summary(pl.UTF-8):   Czcionki dla figleta - programu do generowania napisów ASCII
+Summary(pl.UTF-8):	Czcionki dla figleta - programu do generowania napisów ASCII
 Name:		figlet-fonts
 # Version is last update date: yyyymmdd
 Version:	20050306
